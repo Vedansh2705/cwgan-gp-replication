@@ -1,37 +1,38 @@
 # CWGAN-GP Replication Project
 
-ATML college project replicating:
-"Conditional Wasserstein Generative Adversarial Network-Gradient Penalty-Based
-Approach to Alleviating Imbalanced Data Classification"
-(Zheng et al., Information Sciences, 2019/2020, DOI: 10.1016/j.ins.2019.10.014)
+## Conditional Wasserstein GAN with Gradient Penalty for Imbalanced Data Classification
 
-## Status
-- [x] Phase 1: Paper analysis
-- [ ] Phase 2: Replication specification
-- [x] Phase 3: First dataset selected (Iris, IR=2.00)
-- [ ] Phase 5: CWGAN-GP implementation
-- [ ] Phase 6: Validation
-- [ ] Phase 7: Baselines
-- [ ] Phase 8: Classifiers
-- [ ] Phase 9-12: Experiments, metrics, statistics, results
-- [ ] Phase 15-16: Report, presentation
+This project is a partial replication of the research paper:
 
-## Folder structure
-- `data/` - dataset loading + preprocessing
-- `models/` - CWGAN-GP generator, critic, training loop
-- `baselines/` - SMOTE, ADASYN, ROS, GAN, CGAN, WGAN-GP
-- `classifiers/` - KNN, LR, RF, DT, SVM wrappers
-- `evaluation/` - F-measure, G-mean, AUC implementations
-- `experiments/` - scripts that run the full pipeline
-- `results/` - output tables/plots (generated, not committed)
-- `notebooks/` - exploratory / Colab notebooks
+> **"Conditional Wasserstein Generative Adversarial Network-Gradient Penalty-Based Approach to Alleviating Imbalanced Data Classification"**
 
-## Setup
-```bash
-pip install -r requirements.txt
-```
+**Authors:** Zheng et al.  
+**Journal:** Information Sciences  
+**DOI:** [10.1016/j.ins.2019.10.014](https://doi.org/10.1016/j.ins.2019.10.014)
 
-## Run Step 1 (data loading)
-```bash
-python data/load_iris.py
-```
+---
+
+## 📌 Project Overview
+
+Imbalanced classification occurs when one class contains significantly fewer samples than another. In such cases, machine learning classifiers can become biased toward the majority class.
+
+This project replicates the **CWGAN-GP** approach proposed by Zheng et al. to generate realistic synthetic minority-class samples and improve classification performance on imbalanced datasets.
+
+The project compares CWGAN-GP with traditional oversampling methods and other generative approaches.
+
+### Main Idea
+
+```text
+Imbalanced Dataset
+       ↓
+Identify Minority Class
+       ↓
+Train Generative Model
+       ↓
+Generate Synthetic Minority Samples
+       ↓
+Balance Training Dataset
+       ↓
+Train Classifiers
+       ↓
+Evaluate Performance
