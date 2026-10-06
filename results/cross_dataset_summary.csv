@@ -1,0 +1,16 @@
+dataset,IR,metric,CWGAN-GP_rank
+LIVER,1.23,auc,2.4
+LIVER,1.23,f_measure,4.6
+LIVER,1.23,g_mean,3.8
+HEART,1.25,f_measure,4.4
+HEART,1.25,auc,5.4
+HEART,1.25,g_mean,4.4
+IRIS,2.0,f_measure,6.0
+IRIS,2.0,g_mean,6.0
+IRIS,2.0,auc,5.4
+WINE,2.02,g_mean,5.6
+WINE,2.02,f_measure,5.8
+WINE,2.02,auc,5.2
+HABERMAN,2.78,auc,3.0
+HABERMAN,2.78,g_mean,6.2
+HABERMAN,2.78,f_measure,6.0

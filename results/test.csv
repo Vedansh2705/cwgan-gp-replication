@@ -1,0 +1,2 @@
+Method,Classifier,Metric,Mean,Std
+SMOTE,KNN,f_measure,0.92,0.06
